@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scratchvision"
+version = "0.1.0"
+description = "Image classification from scratch with NumPy"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "jupyter",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["scratchvision*"]

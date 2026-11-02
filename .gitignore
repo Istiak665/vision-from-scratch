@@ -1,0 +1,18 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Editor and notebook files
+.idea/
+.ipynb_checkpoints/
+
+# Local data and results
+datasets/
+outputs/
+
+# Third-party reading material
+references/*.pdf
+references/*.pptx

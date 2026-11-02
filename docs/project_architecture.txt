@@ -1,0 +1,54 @@
+vision-from-scratch/
+├── README.md                  # Project overview, setup, results
+├── pyproject.toml             # Python version and dependencies
+├── LICENSE
+├── .gitignore
+│
+├── scratchvision/             # Reusable NumPy code
+│   ├── data/
+│   │   ├── cifar10.py         # Load CIFAR-10
+│   │   └── preprocessing.py   # Split, flatten, mean subtraction
+│   ├── features/
+│   │   ├── color_histogram.py
+│   │   └── hog.py
+│   ├── models/
+│   │   ├── knn.py
+│   │   ├── linear_classifier.py
+│   │   ├── softmax_classifier.py
+│   │   ├── two_layer_net.py
+│   │   └── fully_connected_net.py
+│   ├── layers/
+│   │   ├── affine.py          # Forward and backward
+│   │   └── affine_relu.py     # Sandwich layer
+│   ├── activations/
+│   │   └── relu.py
+│   ├── losses/
+│   │   └── softmax_loss.py
+│   ├── optimizers/
+│   │   ├── sgd.py
+│   │   ├── sgd_momentum.py
+│   │   ├── rmsprop.py
+│   │   └── adam.py
+│   ├── training/
+│   │   ├── solver.py          # Training loop
+│   │   └── gradient_check.py
+│   └── utils/
+│       └── visualization.py
+│
+├── notebooks/                 # Experiments and explanations
+│   ├── 00_data_exploration.ipynb
+│   ├── 01_knn.ipynb
+│   ├── 02_softmax.ipynb
+│   ├── 03_two_layer_net.ipynb
+│   ├── 04_image_features.ipynb
+│   ├── 05_fully_connected_net.ipynb
+│   └── 06_classifier_comparison.ipynb
+│
+├── docs/                      # Theory, math, hand calculations
+├── slides/                    # Your teaching slides
+├── references/                # Books, papers, reading_list.md
+├── scripts/
+│   └── download_cifar10.py
+├── tests/                     # Shape and gradient tests
+├── datasets/                  # Local only, not on GitHub
+└── outputs/                   # Local only: figures, checkpoints
